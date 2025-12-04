@@ -5,11 +5,21 @@ import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: {
-    default: 'Softlyflow - A gentle guide to self-improvement in the AI era',
+    default: 'Softlyflow - Global aesthetic DIY & lifestyle inspiration',
     template: '%s | Softlyflow',
   },
-  description: 'Discover how AI can enhance your daily life. Practical guides, insights, and tips for self-improvement in the age of artificial intelligence.',
-  keywords: ['AI', 'artificial intelligence', 'self-improvement', 'life hacks', 'productivity', 'technology', 'wellness'],
+  description:
+    'Softlyflow shares globally-loved aesthetic DIY tutorials, cozy crafts, and mindful lifestyle ideas for English-speaking makers.',
+  keywords: [
+    'DIY crafts',
+    'aesthetic lifestyle',
+    'crochet',
+    'handmade',
+    'journaling',
+    'home decor',
+    'baking',
+    'templates',
+  ],
   authors: [{ name: 'Softlyflow' }],
   creator: 'Softlyflow',
   publisher: 'Softlyflow',
@@ -27,13 +37,15 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://softlyflow.com',
     siteName: 'Softlyflow',
-    title: 'Softlyflow - A gentle guide to self-improvement in the AI era',
-    description: 'Discover how AI can enhance your daily life. Practical guides, insights, and tips for self-improvement in the age of artificial intelligence.',
+    title: 'Softlyflow - Global aesthetic DIY & lifestyle inspiration',
+    description:
+      'Softlyflow shares globally-loved aesthetic DIY tutorials, cozy crafts, and mindful lifestyle ideas for English-speaking makers.',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Softlyflow - A gentle guide to self-improvement in the AI era',
-    description: 'Discover how AI can enhance your daily life. Practical guides, insights, and tips for self-improvement in the age of artificial intelligence.',
+    title: 'Softlyflow - Global aesthetic DIY & lifestyle inspiration',
+    description:
+      'Softlyflow shares globally-loved aesthetic DIY tutorials, cozy crafts, and mindful lifestyle ideas for English-speaking makers.',
   },
   robots: {
     index: true,

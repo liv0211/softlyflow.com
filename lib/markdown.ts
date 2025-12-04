@@ -46,6 +46,13 @@ export function markdownToHtml(markdown: string): string {
   html = html.replace(/^## (.*$)/gim, '<h2>$1</h2>')
   html = html.replace(/^# (.*$)/gim, '<h1>$1</h1>')
 
+  // Images (process before links)
+  // ![alt](src) → <figure><img ... /></figure>
+  html = html.replace(/!\[([^\]]*)\]\(([^)]+)\)/gim, (_match, alt, src) => {
+    const safeAlt = alt || ''
+    return `<figure class="article-image"><img src="${src}" alt="${safeAlt}" loading="lazy" /></figure>`
+  })
+
   // Bold (process before italic to avoid conflicts)
   // Replace **text** with <strong>text</strong>
   html = html.replace(/\*\*([^*]+?)\*\*/gim, '<strong>$1</strong>')

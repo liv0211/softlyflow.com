@@ -3,11 +3,13 @@ import ArticleCard from '@/components/ArticleCard'
 import { getAllArticles } from '@/lib/articles'
 
 export const metadata: Metadata = {
-  title: 'Articles',
-  description: 'Browse all articles about AI and self-improvement. Discover practical guides, insights, and tips for personal growth in the AI era.',
+  title: 'Tutorials',
+  description:
+    'Browse aesthetic DIY, craft, baking, and lifestyle tutorials designed for a global audience. Soft, beginner-friendly guides for cozy creative living.',
   openGraph: {
-    title: 'Articles | Softlyflow',
-    description: 'Browse all articles about AI and self-improvement.',
+    title: 'Tutorials | Softlyflow',
+    description:
+      'Explore aesthetic DIY, craft, baking, and lifestyle tutorials created for cozy, creative makers worldwide.',
   },
 }
 
@@ -18,9 +20,10 @@ export default function ArticlesPage() {
     <div className="min-h-screen bg-gray-50 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">All Articles</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">All Tutorials</h1>
           <p className="text-lg text-gray-600">
-            Explore our collection of articles about AI and self-improvement
+            Explore cozy DIY projects, aesthetic crafts, baking ideas, and lifestyle rituals curated for a global
+            community of makers.
           </p>
         </div>
 

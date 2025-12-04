@@ -12,25 +12,24 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              A gentle guide to self-improvement
-              <span className="block text-primary-600 mt-2">in the AI era</span>
+              Aesthetic DIY, crafts & slow lifestyle
+              <span className="block text-primary-600 mt-2">for cozy makers all around the world</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Discover how artificial intelligence can enhance your daily life. 
-              Practical guides, insights, and tips for personal growth in the age of AI.
+              Discover gentle, beginner-friendly tutorials, warm handmade projects, and mindful lifestyle ideas that make everyday life feel soft, creative, and beautifully designed.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/articles"
                 className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-primary-600 hover:bg-primary-700 transition-colors shadow-lg hover:shadow-xl"
               >
-                Explore Articles
+                Browse Tutorials
               </Link>
               <Link
                 href="/about"
                 className="inline-flex items-center justify-center px-8 py-3 border border-primary-600 text-base font-medium rounded-lg text-primary-600 bg-white hover:bg-primary-50 transition-colors"
               >
-                Learn More
+                About Softlyflow
               </Link>
             </div>
           </div>
@@ -41,11 +40,9 @@ export default function Home() {
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-              Latest Articles
-            </h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Latest Tutorials</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Explore our collection of articles about AI and self-improvement
+              Cozy crafts, mindful baking, journaling prompts, and lifestyle DIYs curated for a global aesthetic community
             </p>
           </div>
 
@@ -90,17 +87,15 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-16 lg:py-24 bg-primary-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-            Start Your Journey Today
-          </h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Start Creating Today</h2>
           <p className="text-xl text-primary-100 mb-8">
-            Join thousands of readers discovering how AI can transform their lives
+            Join makers worldwide who celebrate beauty, calm, and creativity every single day
           </p>
           <Link
             href="/articles"
             className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-primary-600 bg-white hover:bg-gray-50 transition-colors shadow-lg"
           >
-            Browse Articles
+            Browse Tutorials
           </Link>
         </div>
       </section>
