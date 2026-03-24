@@ -1,85 +1,28 @@
 import Link from 'next/link'
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear()
-
   return (
-    <footer className="bg-gray-50 border-t border-gray-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="col-span-1 md:col-span-2">
-            <Link href="/" className="inline-block mb-4">
-              <span className="text-2xl font-bold text-gray-900">Softlyflow</span>
-            </Link>
-            <p className="text-gray-600 text-sm max-w-md">
-              A gentle guide to self-improvement in the AI era. Discover how artificial intelligence can enhance your daily life.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">
-              Navigation
-            </h3>
-            <ul className="space-y-3">
-              <li>
-                <Link
-                  href="/"
-                  className="text-gray-600 hover:text-primary-600 text-sm transition-colors"
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/articles"
-                  className="text-gray-600 hover:text-primary-600 text-sm transition-colors"
-                >
-                  Articles
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/about"
-                  className="text-gray-600 hover:text-primary-600 text-sm transition-colors"
-                >
-                  About
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">
-              Legal
-            </h3>
-            <ul className="space-y-3">
-              <li>
-                <Link
-                  href="/privacy"
-                  className="text-gray-600 hover:text-primary-600 text-sm transition-colors"
-                >
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/terms"
-                  className="text-gray-600 hover:text-primary-600 text-sm transition-colors"
-                >
-                  Terms of Service
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="mt-8 pt-8 border-t border-gray-200">
-          <p className="text-center text-gray-500 text-sm">
-            © {currentYear} Softlyflow. All rights reserved.
+    <footer className="border-t border-stone-200/60 bg-cream-dark mt-16">
+      <div className="max-w-5xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div>
+          <span className="font-serif text-lg text-ink tracking-tight">softlyflow</span>
+          <p className="text-xs font-sans font-light text-ink-muted mt-1 tracking-wide">
+            Curated aesthetic inspo for the modern creator.
           </p>
         </div>
+        <div className="flex flex-wrap justify-center gap-6 text-xs font-sans font-light tracking-widest uppercase text-ink-muted">
+          <Link href="/" className="hover:text-ink transition-colors">Home</Link>
+          <Link href="/bios" className="hover:text-ink transition-colors">Bios</Link>
+          <Link href="/captions" className="hover:text-ink transition-colors">Captions</Link>
+          <Link href="/guides" className="hover:text-ink transition-colors">Guides</Link>
+          <Link href="/about" className="hover:text-ink transition-colors">About</Link>
+          <Link href="/viral-caption-gen" className="hover:text-accent transition-colors">Caption Gen</Link>
+          <Link href="/privacy-policy" className="hover:text-ink transition-colors">Privacy</Link>
+        </div>
+        <p className="text-xs font-sans font-light text-ink-muted tracking-wide">
+          © {new Date().getFullYear()} Softlyflow. All rights reserved.
+        </p>
       </div>
     </footer>
   )
 }
-
